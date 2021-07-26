@@ -6,11 +6,16 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.layout.FlowPane;
+import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
 
 public class Main extends Application {
+
+    @FXML
+    private FlowPane flowPane;
 
     @FXML
     private TextFlow textFlow0;
@@ -39,6 +44,11 @@ public class Main extends Application {
 
     @FXML
     private void initialize() {
+        flowPane.setPrefWrapLength(Double.MAX_VALUE);
+        Rectangle rect = new Rectangle();
+        rect.widthProperty().bind(flowPane.widthProperty());
+        rect.heightProperty().bind(flowPane.heightProperty());
+        flowPane.setClip(rect);
         textFlow0.getChildren().add(new Text(longText));
         textFlow1.getChildren().add(new Text(longText));
         textFlow2.getChildren().add(new Text(longText));
