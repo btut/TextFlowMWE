@@ -1,0 +1,13 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.TextFlow?>
+
+<?import javafx.scene.control.Label?>
+<GridPane fx:controller="sample.Main"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <TextFlow fx:id="textFlow0" GridPane.rowIndex = "0" GridPane.columnIndex="0" />
+    <Label fx:id="label0" GridPane.rowIndex = "0" wrapText="true" GridPane.columnIndex="1"/>
+    <TextFlow fx:id="textFlow1" GridPane.rowIndex = "1" GridPane.columnIndex="0" />
+    <Label fx:id="label1" GridPane.rowIndex = "1" wrapText="true" GridPane.columnIndex="1"/>
+    <TextFlow fx:id="textFlow2" GridPane.rowIndex = "2" GridPane.columnIndex="0" />
+    <Label fx:id="label2" GridPane.rowIndex = "2" wrapText="true" GridPane.columnIndex="1"/>
+</GridPane>
