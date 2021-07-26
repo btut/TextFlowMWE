@@ -5,8 +5,8 @@
 <?import javafx.scene.layout.FlowPane?>
 <GridPane fx:controller="sample.Main"
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-    <FlowPane fx:id="flowPane">
-        <TextFlow fx:id="textFlow0" GridPane.rowIndex = "0" GridPane.columnIndex="0" />
+    <FlowPane fx:id="flowPane" GridPane.rowIndex = "0" GridPane.columnIndex="0">
+        <TextFlow fx:id="textFlow0" />
     </FlowPane>
     <Label fx:id="label0" GridPane.rowIndex = "0" wrapText="true" GridPane.columnIndex="1"/>
     <TextFlow fx:id="textFlow1" GridPane.rowIndex = "1" GridPane.columnIndex="0" />
